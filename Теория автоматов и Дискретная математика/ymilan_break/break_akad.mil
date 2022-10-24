@@ -1,0 +1,7 @@
+BEGIN
+x := 1;
+WHILE x < 100 DO
+IF x = 50 THEN BREAK FI;
+x := x + 1 OD;
+WRITE(x)
+END

@@ -1,0 +1,16 @@
+BEGIN
+	i := READ;
+	WHILE i > 0 DO
+          i := i - 1;
+          
+	      IF i = 3 THEN
+            CONTINUE
+	      FI;
+          
+          IF i = 4 THEN
+            CONTINUE
+          FI;
+          
+          WRITE(i)
+	OD
+END

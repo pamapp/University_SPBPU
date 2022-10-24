@@ -1,0 +1,13 @@
+
+Поиск linux:
+cat3/3.txt:2:linux
+cat3/2.txt:4:linux
+
+Поиск text:
+cat3/3.txt:3:text
+cat3/2.txt:3:text
+cat3/1.txt:1:text
+
+Поиск something:
+cat3/3.txt:1:something
+cat3/1.txt:4:something

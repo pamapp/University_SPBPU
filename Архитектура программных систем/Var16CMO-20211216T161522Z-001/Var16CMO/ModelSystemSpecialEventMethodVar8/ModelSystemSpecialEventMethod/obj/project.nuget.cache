@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "tQhH3XkhnaBAq7YzQ/WRSmf6iRauBmi0e6Zw5tL/YY6+f+FVGmz0/ZQTNWrlKx5EnPsmVoOaPS3lzroJrJGK+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Викушка\\Desktop\\Ежиха\\Var16CMO-20211216T161522Z-001\\Var16CMO\\ModelSystemSpecialEventMethodVar8\\ModelSystemSpecialEventMethod\\ModelSystemSpecialEventMethod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Викушка\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\Викушка\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Викушка\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Викушка\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

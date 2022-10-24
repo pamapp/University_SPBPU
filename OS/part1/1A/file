@@ -1,0 +1,59 @@
+
+Before signals:
+
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+  501   568   565   0  4:07   ttys000    0:00.33 -fish
+  501  1180   568   0  4:17   ttys000    0:00.01 ./father
+  501  1181  1180   0  4:17   ttys000    0:00.01 son1
+  501  1182  1180   0  4:17   ttys000    0:00.01 son2
+  501  1184  1180   0  4:17   ttys000    0:00.00 son3
+  501  1186  1180   0  4:17   ttys000    0:00.01 sh -c ps -f >> file
+  501   581   579   0  4:07   ttys001    0:00.13 -fish
+  501   590   585   0  4:07   ttys002    0:00.14 -fish
+
+After son1 signal:
+
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+  501   568   565   0  4:07   ttys000    0:00.33 -fish
+  501  1180   568   0  4:17   ttys000    0:00.01 ./father
+  501  1181  1180   0  4:17   ttys000    0:00.00 (son1)
+  501  1182  1180   0  4:17   ttys000    0:00.01 son2
+  501  1184  1180   0  4:17   ttys000    0:00.00 son3
+  501  1189  1180   0  4:17   ttys000    0:00.01 sh -c ps -f >> file
+  501   581   579   0  4:07   ttys001    0:00.13 -fish
+  501   590   585   0  4:07   ttys002    0:00.14 -fish
+
+After son2 signal:
+
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+  501   568   565   0  4:07   ttys000    0:00.33 -fish
+  501  1180   568   0  4:17   ttys000    0:00.01 ./father
+  501  1181  1180   0  4:17   ttys000    0:00.00 (son1)
+  501  1182  1180   0  4:17   ttys000    0:00.01 son2
+  501  1184  1180   0  4:17   ttys000    0:00.00 son3
+  501  1192  1180   0  4:17   ttys000    0:00.01 sh -c ps -f >> file
+  501   581   579   0  4:07   ttys001    0:00.13 -fish
+  501   590   585   0  4:07   ttys002    0:00.14 -fish
+
+After son3 signal:
+
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+  501   568   565   0  4:07   ttys000    0:00.33 -fish
+  501  1180   568   0  4:17   ttys000    0:00.01 ./father
+  501  1181  1180   0  4:17   ttys000    0:00.00 (son1)
+  501  1182  1180   0  4:17   ttys000    0:00.00 (son2)
+  501  1184  1180   0  4:17   ttys000    0:00.00 (son3)
+  501  1197  1180   0  4:17   ttys000    0:00.01 sh -c ps -f >> file
+  501   581   579   0  4:07   ttys001    0:00.13 -fish
+  501   590   585   0  4:07   ttys002    0:00.14 -fish
+
+After all signals:
+
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+  501   568   565   0  4:07   ttys000    0:00.33 -fish
+  501  1180   568   0  4:17   ttys000    0:00.01 ./father
+  501  1181  1180   0  4:17   ttys000    0:00.00 (son1)
+  501  1182  1180   0  4:17   ttys000    0:00.00 (son2)
+  501  1203  1180   0  4:17   ttys000    0:00.01 sh -c ps -f >> file
+  501   581   579   0  4:07   ttys001    0:00.13 -fish
+  501   590   585   0  4:07   ttys002    0:00.14 -fish

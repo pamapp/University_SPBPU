@@ -1,0 +1,11 @@
+BEGIN
+	i := READ;
+	WHILE i > 0 DO
+	      WRITE(i);
+	      IF i = 3 THEN
+	       	 WRITE(i);
+	      	 BREAK
+	      FI;
+	      i := i - 1
+	OD
+END

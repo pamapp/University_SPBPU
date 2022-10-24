@@ -1,0 +1,12 @@
+BEGIN
+    x := READ;
+    y := READ;
+    WHILE x != y DO
+        IF x > y THEN
+            x := x - y + 13;
+        ELSE
+            y := y - x;
+        FI;
+    OD;
+    WRITE(x + 3)
+END

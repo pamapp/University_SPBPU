@@ -1,0 +1,4 @@
+0
+word
+text
+linux
